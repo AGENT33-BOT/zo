@@ -5,133 +5,264 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Notion Templates | Premium Productivity Systems</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Inter', sans-serif; }
-    .gradient-bg {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    .gradient-text {
+      background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     .card-hover:hover {
       transform: translateY(-4px);
-      box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+      box-shadow: 0 20px 40px -12px rgba(99, 102, 241, 0.25);
     }
   </style>
 </head>
-<body class="bg-zinc-950 text-white">
-  <!-- Hero Section -->
-  <header class="gradient-bg">
+<body class="bg-zinc-950 text-white min-h-screen">
+  <!-- Header -->
+  <header class="border-b border-zinc-800">
     <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <span class="text-xl font-bold">NotionTemplates</span>
-      <a href="#products" class="bg-white text-purple-600 px-5 py-2 rounded-full font-semibold hover:bg-opacity-90 transition">Shop Now</a>
+      <a href="/" class="text-xl font-bold">NotionPro</a>
+      <div class="flex gap-6 text-sm">
+        <a href="#templates" class="hover:text-purple-400 transition">Templates</a>
+        <a href="#features" class="hover:text-purple-400 transition">Features</a>
+        <a href="#faq" class="hover:text-purple-400 transition">FAQ</a>
+      </div>
     </nav>
-    <div class="max-w-4xl mx-auto px-6 py-20 text-center">
-      <h1 class="text-5xl md:text-6xl font-bold mb-6">Supercharge Your Productivity</h1>
-      <p class="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">Premium Notion templates to organize your life, business, and goals. Work smarter, not harder.</p>
-      <a href="#products" class="inline-block bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-bold hover:bg-opacity-90 transition shadow-lg">Browse Templates →</a>
-    </div>
   </header>
 
-  <!-- Products Section -->
-  <section id="products" class="max-w-6xl mx-auto px-6 py-20">
-    <h2 class="text-3xl font-bold text-center mb-4">Our Templates</h2>
-    <p class="text-zinc-400 text-center mb-12">All templates $19.99 • Instant Download</p>
-    
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Product 1 -->
-      <div class="bg-zinc-900 rounded-2xl p-6 card-hover transition border border-zinc-800">
-        <div class="text-4xl mb-4">🎯</div>
-        <h3 class="text-xl font-bold mb-2">Ultimate Life OS</h3>
-        <p class="text-zinc-400 text-sm mb-4">Complete life management system - goals, habits, finance, learning, health, and more.</p>
-        <div class="flex justify-between items-center">
-          <span class="text-2xl font-bold">$19.99</span>
-          <a href="https://buy.stripe.com/8x2cN57mF0BB1l78BhfjG00" target="_blank" class="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-lg font-semibold transition">Buy Now</a>
-        </div>
-      </div>
+  <!-- Hero -->
+  <section class="py-20 text-center px-6">
+    <h1 class="text-5xl md:text-6xl font-bold mb-6">
+      <span class="gradient-text">Transform Your Life</span><br>
+      with Notion Templates
+    </h1>
+    <p class="text-xl text-zinc-400 max-w-2xl mx-auto mb-8">
+      Pre-built productivity systems that actually work. Organize your life, boost your business, 
+      and achieve your goals — all in Notion.
+    </p>
+    <div class="flex gap-4 justify-center">
+      <a href="#templates" class="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:opacity-90 transition">
+        Browse Templates
+      </a>
+      <a href="#features" class="px-8 py-3 border border-zinc-700 rounded-full font-semibold hover:bg-zinc-900 transition">
+        Learn More
+      </a>
+    </div>
+  </section>
 
-      <!-- Product 2 -->
-      <div class="bg-zinc-900 rounded-2xl p-6 card-hover transition border border-zinc-800">
-        <div class="text-4xl mb-4">🎬</div>
-        <h3 class="text-xl font-bold mb-2">Content Creator Studio</h3>
-        <p class="text-zinc-400 text-sm mb-4">All-in-one content production system. Plan, create, schedule, and track content like a pro.</p>
-        <div class="flex justify-between items-center">
-          <span class="text-2xl font-bold">$19.99</span>
-          <a href="https://buy.stripe.com/6oU5kD9uNbgfbZL4l1fjG01" target="_blank" class="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-lg font-semibold transition">Buy Now</a>
+  <!-- Templates Grid -->
+  <section id="templates" class="py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">All Templates <span class="text-purple-400">$19.99</span> • Instant Download</h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Life OS -->
+        <div class="bg-zinc-900 rounded-2xl p-6 border border-zinc-800 card-hover transition-all duration-300">
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="text-xl font-bold mb-2">Ultimate Life OS</h3>
+          <p class="text-zinc-400 text-sm mb-4">Complete life management system</p>
+          <ul class="text-sm text-zinc-500 mb-4 space-y-1">
+            <li>✓ Goals & Vision Board</li>
+            <li>✓ Daily Habits Tracker</li>
+            <li>✓ Finance Tracker</li>
+            <li>✓ Learning System</li>
+            <li>✓ Health & Wellness</li>
+            <li>✓ Relationship Manager</li>
+          </ul>
+          <a href="/product/life-os" class="block text-center py-2 bg-purple-600 rounded-lg font-medium hover:bg-purple-700 transition">
+            View Details
+          </a>
         </div>
-      </div>
 
-      <!-- Product 3 -->
-      <div class="bg-zinc-900 rounded-2xl p-6 card-hover transition border border-zinc-800">
-        <div class="text-4xl mb-4">💼</div>
-        <h3 class="text-xl font-bold mb-2">Freelancer Business Hub</h3>
-        <p class="text-zinc-400 text-sm mb-4">Complete business management for freelancers. Clients, projects, invoices, and earnings.</p>
-        <div class="flex justify-between items-center">
-          <span class="text-2xl font-bold">$19.99</span>
-          <a href="https://buy.stripe.com/6oUdR9eP7acb4xj9FlfjG02" target="_blank" class="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-lg font-semibold transition">Buy Now</a>
+        <!-- Content Creator -->
+        <div class="bg-zinc-900 rounded-2xl p-6 border border-zinc-800 card-hover transition-all duration-300">
+          <div class="text-4xl mb-4">🎬</div>
+          <h3 class="text-xl font-bold mb-2">Content Creator Studio</h3>
+          <p class="text-zinc-400 text-sm mb-4">All-in-one content production system</p>
+          <ul class="text-sm text-zinc-500 mb-4 space-y-1">
+            <li>✓ Content Calendar</li>
+            <li>✓ Idea Bank</li>
+            <li>✓ Script Templates</li>
+            <li>✓ Analytics Dashboard</li>
+            <li>✓ Multi-Platform Tracker</li>
+            <li>✓ Monetization Tracker</li>
+          </ul>
+          <a href="/product/content-creator" class="block text-center py-2 bg-purple-600 rounded-lg font-medium hover:bg-purple-700 transition">
+            View Details
+          </a>
         </div>
-      </div>
 
-      <!-- Product 4 -->
-      <div class="bg-zinc-900 rounded-2xl p-6 card-hover transition border border-zinc-800">
-        <div class="text-4xl mb-4">📚</div>
-        <h3 class="text-xl font-bold mb-2">Student Planner</h3>
-        <p class="text-zinc-400 text-sm mb-4">Academic success system. Track assignments, courses, grades, and GPA.</p>
-        <div class="flex justify-between items-center">
-          <span class="text-2xl font-bold">$19.99</span>
-          <a href="https://buy.stripe.com/28EaEX8qJ5VV8Nz8BhfjG04" target="_blank" class="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-lg font-semibold transition">Buy Now</a>
+        <!-- Freelancer -->
+        <div class="bg-zinc-900 rounded-2xl p-6 border border-zinc-800 card-hover transition-all duration-300">
+          <div class="text-4xl mb-4">💼</div>
+          <h3 class="text-xl font-bold mb-2">Freelancer Business Hub</h3>
+          <p class="text-zinc-400 text-sm mb-4">Complete business management</p>
+          <ul class="text-sm text-zinc-500 mb-4 space-y-1">
+            <li>✓ Client Database</li>
+            <li>✓ Project Tracker</li>
+            <li>✓ Invoice Generator</li>
+            <li>✓ Payment Tracker</li>
+            <li>✓ Contract Templates</li>
+            <li>✓ Earnings Analytics</li>
+          </ul>
+          <a href="/product/freelancer" class="block text-center py-2 bg-purple-600 rounded-lg font-medium hover:bg-purple-700 transition">
+            View Details
+          </a>
         </div>
-      </div>
 
-      <!-- Product 5 -->
-      <div class="bg-zinc-900 rounded-2xl p-6 card-hover transition border border-zinc-800">
-        <div class="text-4xl mb-4">🍳</div>
-        <h3 class="text-xl font-bold mb-2">Master Chef Kitchen</h3>
-        <p class="text-zinc-400 text-sm mb-4">Complete recipe management system. Organize recipes, meal plans, and grocery lists.</p>
-        <div class="flex justify-between items-center">
-          <span class="text-2xl font-bold">$19.99</span>
-          <a href="https://buy.stripe.com/7sY14ngXf0BB1l79FlfjG03" target="_blank" class="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-lg font-semibold transition">Buy Now</a>
+        <!-- Student Planner -->
+        <div class="bg-zinc-900 rounded-2xl p-6 border border-zinc-800 card-hover transition-all duration-300">
+          <div class="text-4xl mb-4">📚</div>
+          <h3 class="text-xl font-bold mb-2">Student Planner</h3>
+          <p class="text-zinc-400 text-sm mb-4">Academic success system</p>
+          <ul class="text-sm text-zinc-500 mb-4 space-y-1">
+            <li>✓ Assignment Tracker</li>
+            <li>✓ Course Manager</li>
+            <li>✓ Grade Calculator</li>
+            <li>✓ Study Schedule</li>
+            <li>✓ Note Taking System</li>
+            <li>✓ GPA Tracker</li>
+          </ul>
+          <a href="/product/student-planner" class="block text-center py-2 bg-purple-600 rounded-lg font-medium hover:bg-purple-700 transition">
+            View Details
+          </a>
         </div>
-      </div>
 
-      <!-- Product 6 -->
-      <div class="bg-zinc-900 rounded-2xl p-6 card-hover transition border border-zinc-800">
-        <div class="text-4xl mb-4">💪</div>
-        <h3 class="text-xl font-bold mb-2">Fitness Tracker Pro</h3>
-        <p class="text-zinc-400 text-sm mb-4">Health & fitness tracking. Workouts, nutrition, progress photos, and goals.</p>
-        <div class="flex justify-between items-center">
-          <span class="text-2xl font-bold">$19.99</span>
-          <a href="https://buy.stripe.com/dRm28rdL33NN3tf04LfjG05" target="_blank" class="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-lg font-semibold transition">Buy Now</a>
+        <!-- Master Chef -->
+        <div class="bg-zinc-900 rounded-2xl p-6 border border-zinc-800 card-hover transition-all duration-300">
+          <div class="text-4xl mb-4">🍳</div>
+          <h3 class="text-xl font-bold mb-2">Master Chef Kitchen</h3>
+          <p class="text-zinc-400 text-sm mb-4">Complete recipe management</p>
+          <ul class="text-sm text-zinc-500 mb-4 space-y-1">
+            <li>✓ Recipe Database</li>
+            <li>✓ Meal Planning</li>
+            <li>✓ Shopping Lists</li>
+            <li>✓ Nutrition Tracker</li>
+            <li>✓ Cookbook Organizer</li>
+            <li>✓ Kitchen Inventory</li>
+          </ul>
+          <a href="/product/master-chef" class="block text-center py-2 bg-purple-600 rounded-lg font-medium hover:bg-purple-700 transition">
+            View Details
+          </a>
         </div>
+
+        <!-- Fitness Tracker -->
+        <div class="bg-zinc-900 rounded-2xl p-6 border border-zinc-800 card-hover transition-all duration-300">
+          <div class="text-4xl mb-4">💪</div>
+          <h3 class="text-xl font-bold mb-2">Fitness Tracker Pro</h3>
+          <p class="text-zinc-400 text-sm mb-4">Health & fitness tracking</p>
+          <ul class="text-sm text-zinc-500 mb-4 space-y-1">
+            <li>✓ Workout Builder</li>
+            <li>✓ Exercise Library</li>
+            <li>✓ Progress Photos</li>
+            <li>✓ Nutrition Planner</li>
+            <li>✓ Body Metrics</li>
+            <li>✓ Goal Setting</li>
+          </ul>
+          <a href="/product/fitness-tracker" class="block text-center py-2 bg-purple-600 rounded-lg font-medium hover:bg-purple-700 transition">
+            View Details
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- Features -->
-  <section class="bg-zinc-900 py-20">
-    <div class="max-w-6xl mx-auto px-6">
+  <section id="features" class="py-16 px-6 bg-zinc-900">
+    <div class="max-w-6xl mx-auto">
       <h2 class="text-3xl font-bold text-center mb-12">Why Choose Our Templates?</h2>
       <div class="grid md:grid-cols-3 gap-8">
         <div class="text-center">
           <div class="text-4xl mb-4">⚡</div>
-          <h3 class="font-bold mb-2">Instant Download</h3>
-          <p class="text-zinc-400">Get your template immediately after purchase</p>
+          <h3 class="text-xl font-semibold mb-2">Instant Download</h3>
+          <p class="text-zinc-400">Get your template immediately after purchase. Start using it in minutes.</p>
         </div>
         <div class="text-center">
           <div class="text-4xl mb-4">♾️</div>
-          <h3 class="font-bold mb-2">Lifetime Updates</h3>
-          <p class="text-zinc-400">Get all future updates for free</p>
+          <h3 class="text-xl font-semibold mb-2">Lifetime Updates</h3>
+          <p class="text-zinc-400">Get all future updates for free. Your template evolves with Notion.</p>
         </div>
         <div class="text-center">
           <div class="text-4xl mb-4">💬</div>
-          <h3 class="font-bold mb-2">Support Included</h3>
-          <p class="text-zinc-400">We help you get started</p>
+          <h3 class="text-xl font-semibold mb-2">Support Included</h3>
+          <p class="text-zinc-400">We help you get started with setup guides and video tutorials.</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl mb-4">🎨</div>
+          <h3 class="text-xl font-semibold mb-2">Beautifully Designed</h3>
+          <p class="text-zinc-400">Stunning aesthetics that make you actually want to use your workspace.</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl mb-4">📱</div>
+          <h3 class="text-xl font-semibold mb-2">Mobile Friendly</h3>
+          <p class="text-zinc-400">Works perfectly on desktop and mobile. Access your data anywhere.</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl mb-4">🔒</div>
+          <h3 class="text-xl font-semibold mb-2">Your Data Stays Yours</h3>
+          <p class="text-zinc-400">All data stored in your Notion account. We never see your information.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
+          <h3 class="font-semibold mb-2">Choose Template</h3>
+          <p class="text-zinc-400 text-sm">Browse our collection and pick the perfect template for your needs.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
+          <h3 class="font-semibold mb-2">Secure Checkout</h3>
+          <p class="text-zinc-400 text-sm">Pay securely via Stripe. Instant download link sent to email.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
+          <h3 class="font-semibold mb-2">Start Using</h3>
+          <p class="text-zinc-400 text-sm">Duplicate the template to your Notion and customize to your needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16 px-6 bg-zinc-900">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        <div class="bg-zinc-800 rounded-xl p-6">
+          <h3 class="font-semibold mb-2">Do I need a Notion account?</h3>
+          <p class="text-zinc-400 text-sm">Yes, you'll need a free Notion account. Templates work with both free and paid plans.</p>
+        </div>
+        <div class="bg-zinc-800 rounded-xl p-6">
+          <h3 class="font-semibold mb-2">How do I receive the template?</h3>
+          <p class="text-zinc-400 text-sm">After payment, you'll receive an instant download link via email. The link gives you access to a "Copy" page in Notion.</p>
+        </div>
+        <div class="bg-zinc-800 rounded-xl p-6">
+          <h3 class="font-semibold mb-2">Can I get a refund?</h3>
+          <p class="text-zinc-400 text-sm">Yes! If you're not satisfied, contact us within 30 days for a full refund.</p>
+        </div>
+        <div class="bg-zinc-800 rounded-xl p-6">
+          <h3 class="font-semibold mb-2">Do you offer custom templates?</h3>
+          <p class="text-zinc-400 text-sm">Yes! Contact us for custom Notion template development or modifications.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-8 text-center text-zinc-500">
-    <p>© 2025 NotionTemplates. All rights reserved.</p>
+  <footer class="py-8 px-6 border-t border-zinc-800 text-center text-zinc-500 text-sm">
+    <p>© 2024 NotionPro Templates. All rights reserved.</p>
   </footer>
 </body>
 </html>
