@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Notion Starter Kit | Get Organized Today</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-white min-h-screen">
+  <!-- Facebook Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_FACEBOOK_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA4_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'YOUR_GA4_ID');
+  </script>
+
+  <header class="border-b border-zinc-800">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="/" class="text-xl font-bold">NotionPro</a>
+    </nav>
+  </header>
+
+  <!-- Hero - Lead Magnet -->
+  <section class="py-16 px-6 text-center">
+    <div class="max-w-3xl mx-auto">
+      <div class="inline-block px-4 py-1 bg-green-600 rounded-full text-sm font-medium mb-6">
+        🎁 FREE DOWNLOAD
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        Get the <span class="text-purple-400">Free Notion Starter Kit</span>
+      </h1>
+      <p class="text-xl text-zinc-400 mb-8">
+        Everything you need to get organized in 15 minutes. No credit card required.
+      </p>
+    </div>
+  </section>
+
+  <!-- What's Inside -->
+  <section class="py-12 px-6">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-8">What's Inside the Free Kit</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="bg-zinc-900 p-4 rounded-xl flex items-center gap-3">
+          <span class="text-2xl">📋</span>
+          <span>Daily Planner Template</span>
+        </div>
+        <div class="bg-zinc-900 p-4 rounded-xl flex items-center gap-3">
+          <span class="text-2xl">✅</span>
+          <span>Habit Tracker Set</span>
+        </div>
+        <div class="bg-zinc-900 p-4 rounded-xl flex items-center gap-3">
+          <span class="text-2xl">📝</span>
+          <span>Weekly Review Template</span>
+        </div>
+        <div class="bg-zinc-900 p-4 rounded-xl flex items-center gap-3">
+          <span class="text-2xl">🎯</span>
+          <span>Goal Setting Framework</span>
+        </div>
+        <div class="bg-zinc-900 p-4 rounded-xl flex items-center gap-3">
+          <span class="text-2xl">💡</span>
+          <span>Notion Quick-Start Guide</span>
+        </div>
+        <div class="bg-zinc-900 p-4 rounded-xl flex items-center gap-3">
+          <span class="text-2xl">🔗</span>
+          <span>50+ Productivity Links</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Capture Form -->
+  <section class="py-12 px-6 bg-gradient-to-r from-purple-900/30 to-pink-900/30">
+    <div class="max-w-xl mx-auto">
+      <div class="bg-zinc-900 rounded-2xl p-8">
+        <h2 class="text-2xl font-bold text-center mb-2">Get Your Free Kit</h2>
+        <p class="text-zinc-400 text-center mb-6">Enter your email and we'll send it instantly</p>
+        
+        <form id="leadForm" class="space-y-4">
+          <input type="email" id="email" required placeholder="your@email.com" 
+            class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg text-white placeholder-zinc-500 focus:outline-none focus:border-purple-500">
+          <button type="submit" class="w-full py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-bold hover:opacity-90 transition">
+            📬 Send Me The Free Kit
+          </button>
+        </form>
+
+        <p class="text-zinc-500 text-xs text-center mt-4">
+          🔒 We respect your privacy. Unsubscribe anytime.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof -->
+  <section class="py-12 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-zinc-400 mb-4">Join 10,000+ people who got organized</p>
+      <div class="flex justify-center gap-4">
+        <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
+        <span class="text-zinc-400">4.9/5 rating from 500+ reviews</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upsell -->
+  <section class="py-12 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-zinc-400 mb-4">Want more? Check out our premium templates</p>
+      <a href="/" class="inline-block px-6 py-2 border border-purple-500 text-purple-400 rounded-full font-medium hover:bg-purple-600 hover:text-white transition">
+        View Premium Templates →
+      </a>
+    </div>
+  </section>
+
+  <footer class="py-8 px-6 border-t border-zinc-800 text-center text-zinc-500 text-sm">
+    <p>© 2024 NotionPro Templates. All rights reserved.</p>
+  </footer>
+
+  <!-- Form Handler -->
+  <script>
+    document.getElementById('leadForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      
+      // Track lead in Facebook Pixel
+      fbq('track', 'Lead');
+      
+      // Track in Google Analytics
+      gtag('event', 'generate_lead', {'event_category': 'form'});
+      
+      // Store lead (integrate with your email service)
+      console.log('Lead captured:', email);
+      
+      // Show success and redirect
+      alert('Thanks! Check your email for the free kit.');
+      window.location.href = '/thank-you.html';
+    });
+  </script>
+</body>
+</html>
